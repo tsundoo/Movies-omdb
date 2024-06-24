@@ -1,0 +1,74 @@
+body{
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 6rem;
+  color: white;
+  margin-bottom: 6rem;
+}
+
+.logo > p{
+ font-size: 1.7rem;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ padding-left: 2rem;
+}
+
+header{
+  display: flex;
+  gap: 1rem;
+}
+
+header > input{
+  height: 2.5rem;
+  width: 16rem;
+  border: none;
+  border-radius: 18px;
+}
+
+header > button{
+  height: 2.6rem;
+  width: 7.5rem;
+  background-color: rgb(23, 103, 23);
+  color: whitesmoke;
+  border: none;
+  margin-right: 2rem;
+}
+
+#Content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+}
+
+article{
+  text-align: center;
+}
+
+img{
+  width: 20rem;
+  height: 30rem;
+}
+
+article > h2{
+  width: 20rem;
+}
+
+img:hover{
+  box-shadow: 2px 2px 15px black;
+  animation: grow 1s ease-in-out;
+}
+
+a:active, button:active{
+  opacity: 0.2;
+}
+
+@keyframes grow{
+  100%{transform: scale(1.05, 1.05)}
+}
